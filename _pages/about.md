@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I have a Masters of Science in Computer Science and Engineering during which I learned machine learning and artificial intelligence topics in multiple courses such as Data Science, Machine Learning, PLIDM(Planning, Learning and Intelligent Decision Making), Artificial Intelligence in Games, Autonomous Agents and Multi-Agent Systems, Natural Language. I have also completed a [online course](https://coursera.org/share/3a02f88e77a05ca31ecbe596b30a2ccf) which I recommend for anyone wanting to get a good understanding of the math behind machine learning.
+I have a Master of Science in Computer Science and Engineering, during which I studied machine learning and artificial intelligence topics in multiple courses such as Data Science, Machine Learning, PLIDM (Planning, Learning and Intelligent Decision Making), Artificial Intelligence in Games, Autonomous Agents and Multi-Agent Systems, and Natural Language Processing. I have also completed a [online course](https://coursera.org/share/3a02f88e77a05ca31ecbe596b30a2ccf) which I recommend for anyone wanting to get a good understanding of the math behind machine learning.
 
 # Master Thesis
 
