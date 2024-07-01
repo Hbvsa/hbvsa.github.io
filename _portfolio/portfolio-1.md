@@ -5,7 +5,7 @@ end project which is able to process video and do object detection with custom l
 collection: portfolio
 ---
 
-This post is copy from the readme file from my [repository of the project](https://github.com/Hbvsa/DinoCustomObjectDetection)
+This post is a copy from the readme file from my [repository of the project](https://github.com/Hbvsa/DinoCustomObjectDetection)
 
 # Project overview
 
