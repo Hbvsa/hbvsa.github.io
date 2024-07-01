@@ -21,7 +21,7 @@ repository               : "Hbvsa/hbvsa.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "owl.png"
   name             : "Henrique Sousa"
   pronouns         : # example: "she/her"  
   bio              : "Machine Learning"
