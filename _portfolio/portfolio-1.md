@@ -6,7 +6,7 @@ collection: portfolio
 ---
 # Project overview
 
-![](images/overview.png)
+![](/images/overview.png)
 
 The project starts by creating dataset of images from cropped objects which are detected using GroundingDINO model with a text prompt. The dataset is used to train a image classifier with our custom labels for the objects detected. Finally the purpose of the project is to do an inference composed of the GroundingDINO object detection model with the same initial text prompt combined with the trained classifier. This allows the models to detect and classify the objects observed during training with new custom labels to annotate the frames of a video.
 Future work: use the current project to automatically track objects with custom labels to apply stable diffusion for video editing
@@ -49,14 +49,14 @@ One general advice is that it is better to provided small videos for example 2 v
 
 In our example with the two classes 'jason' and 'lacy' we provided two 3 minute videos for each class for training and one 3 minute video for each class for testing.
 
-![](images/data_creation.png)
+![](/images/data_creation.png)
 
 To change the text prompt go to steps/data_creation.py and directly change it there. The default is "human face". You can also change the videos path if you are not using the default videos folder in the project repo. Do not change the destination_folder since the training pipeline is expecting this path.
 
 The generated dataset will crop the object every 3 seconds, this is done to accelerate the process, if you want more images produced per video go to src/generate_dataset and in the generate_class_dataset method change the seconds in the if condition frame_count % (60 * seconds). It is also in this method that you can change the box and text thresholds if you wish too. The default used in the code is 0.6.
 
 
-![](images/frames_crop.png)
+![](/images/frames_crop.png)
 
 Now you can run the run_data_creation.py to create the dataset.
 ```
@@ -72,7 +72,7 @@ Although be careful to not repeat samples from the same videos.
 
 It should end with this message.
 
-![](images/data_creation_finish.png)
+![](/images/data_creation_finish.png)
 
 ## Model training
 Once you have your datasets you can proceed to train the classifier model. When reading the dataset images the training dataset will double in size by applying horizontal flips to the images.
@@ -81,7 +81,7 @@ Once you have your datasets you can proceed to train the classifier model. When 
 python run_training.py
 ```
 
-![](images/train_step.png)
+![](/images/train_step.png)
 
 During the training script it will output accuracy metrics. In our simple example with only two classes we ran the model for a single epoch and it achieved 99% accuracy on the test videos.
 
@@ -89,7 +89,7 @@ The training code is just a regular pytorch model training. To change the number
 
 After running the training pipeline the run_training.py will also trigger the promote pipeline which will reload the model and evaluate again. By default the required accuracy for the model to be promoted is 90. You can increase or lower this threshold by changing it directly on the pipelines/promote_pipeline.py file in the promote_model function.
 
-![](images/promote.png)
+![](/images/promote.png)
 
 The promotion is necessary for the deployment pipeline to have access to the model.
 The model is now saved at saved_model along with a yaml file describing the classes.
@@ -103,15 +103,15 @@ One slight problem is the incompatibility of zenml with gradio since they both r
 pip install gradio
 python app.py
 ```
-![](images/url.png)
+![](/images/url.png)
 
 By running the app.py it will launch a gradio app click the link to open the app in your browser.
 
-![](images/gradio.png)
+![](/images/gradio.png)
 
 After clicking and uploading a video click Start Processing (ignore the fact the uploaded video is not displaying). After you click processing you should see the video with the object detection box and their classes. If neither the labels achieves a logit above 0 it will say 'uknown' instead.
 
-![](images/detection.png)
+![](/images/detection.png)
 
 Switch back to retraining or recreating datasets if you wish by running the following command to get the right pydantic version. Else you will get a pydantic version error.
 ```
