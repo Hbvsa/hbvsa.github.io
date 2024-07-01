@@ -1,10 +1,10 @@
 ---
 title: "Dino Custom Object Detection"
 excerpt: "Combining GroundingDINO with pretrained Dinov2 to automate an end to
-end project which is able to process video and do object detection with custom labels."
+end project which is able to process video and do object detection with custom labels. Project is available at - [https://github.com/Hbvsa/GroundingDINO](https://github.com/Hbvsa/DinoCustomObjectDetection)"
 collection: portfolio
 ---
-# Project overview
+# Project overview 
 
 ![](/images/overview.png)
 
