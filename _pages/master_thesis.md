@@ -1,3 +1,15 @@
+---
+layout: archive
+title: "Master Thesis"
+permalink: /master_thesis/
+author_profile: true
+redirect_from:
+  - /resume
+---
+
+{% include base_path %}
+
+
 ### Thesis description
 The motivation for my thesis starts by understanding that the correlation between Single Nucleotide Polymorphisms (SNPs) and a disease may hinge on a strictly
 nonlinear combination of two or three SNPs, among the hundreds present in a dataset, which poses a challenge for
