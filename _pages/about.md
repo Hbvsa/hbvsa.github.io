@@ -45,3 +45,6 @@ These combination of factors required me to develop a new way to evaluate a good
 The best model setup would be the one with lowest average number of required seed initializations per dataset.
 
 ## Deep learning projects
+
+I have implemented and applied multiple deep learning models to different projects of which some selected ones are showcased at [Portfolio](https://hbvsa.github.io/portfolio/)
+I have also experimented with deploying these models with Docker to different cloud providers such as GCP, AWS, Azure and HuggingFace.
