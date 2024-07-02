@@ -26,7 +26,7 @@ disease for the samples, the model exhibited its capability to accurately identi
 significant SNPs, despite the subtle nature of the correlation. The model was able to outperform the state of the
 art non exhaustive solutions/models.
 
-To check all the information go to [Master Thesis](https://hbvsa.github.io/files/Henrique_Sousa_MSc_Thesis.pdf)
+The thesis is available at [Master Thesis](https://hbvsa.github.io/files/Henrique_Sousa_MSc_Thesis.pdf)
 
 ### Experience gained
 
