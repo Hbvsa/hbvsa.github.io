@@ -16,7 +16,7 @@ This allows us to automate the creation of image classification datasets.
 
 ### Pretrained DINO with linear head for fast training
 
-Using the datasets created we simply load a pretrained DINO model and in our specific case a single epoch was needed to achieve 99% accuracy on the test set, so the training only took a few seconds.
+Using the datasets created we simply load and finetune a pretrained DINO model with a linear head on top for image classification. In our specific case a single epoch was needed to achieve 99% accuracy on the test set, so the training only took a few seconds.
 
 ### App for inference with both GroudingDINO and Custom Label Trained Classifier
 
