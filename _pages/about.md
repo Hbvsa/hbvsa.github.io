@@ -10,13 +10,21 @@ redirect_from:
 # Selected Experience
 ## Education Background
 
-I have a Master of Science in Computer Science and Engineering from Instituto Superior Técnico, Lisboa, during which I studied machine learning and artificial intelligence topics in multiple courses such as Data Science, Machine Learning, PLIDM (Planning, Learning and Intelligent Decision Making) basically Reinforcement Learning and Markov Decision Processes, Artificial Intelligence in Games, Autonomous Agents and Multi-Agent Systems, and Natural Language Processing. I have also completed a [online course](https://coursera.org/share/3a02f88e77a05ca31ecbe596b30a2ccf) which I recommend for anyone wanting to get a good understanding of the math behind machine learning.
+I hold a Master of Science in Computer Science and Engineering from Instituto Superior Técnico, Lisboa. 
+
+Coursework included advanced topics in machine learning and artificial intelligence:
+- Data Science
+- Machine Learning
+- Planning, Learning and Intelligent Decision Making (PLIDM) - focusing on Reinforcement Learning and Markov Decision Processes
+- Artificial Intelligence in Games
+- Autonomous Agents and Multi-Agent Systems
+- Natural Language Processing
 
 ## Master Thesis - Deep Learning project to extract correlation between genetic factors and disease
 
-My master thesis was the implementation of a deep learning model to extract correlations between genetic information and diseases in datasets where the correlation between features and target variable is low. The individual features correlation with the target variable might be zero where only the non linear interaction between multiple features shows the correlation making it a difficult problem to model. Check [Master Thesis](https://hbvsa.github.io/master_thesis/) for more information.
+For my master thesis I implementated a deep learning model to extract correlations between genetic information and diseases in datasets with low feature-target correlation. In some datasets, each individual feature shows no correlation with the target variable when considered in isolation. However, the correlation emerges only through non-linear interactions among multiple features. This characteristic makes the problem particularly challenging to model. Check [Master Thesis](https://hbvsa.github.io/master_thesis/) for more information.
 
 ## Deep learning projects
 
-I have implemented and applied multiple deep learning models to different projects of which some selected ones are showcased at [Portfolio](https://hbvsa.github.io/portfolio/)
-I have also experimented with deploying these models with Docker to different cloud providers such as GCP, AWS, Azure and HuggingFace.
+I have implemented and applied various deep learning models across multiple projects. One such project being displayed at [Portfolio](https://hbvsa.github.io/portfolio/).
+I have also deployed these models with Docker to different cloud providers such as GCP, AWS, Azure and HuggingFace to make sure the model capabilities can be shared and easy to use in an app format.
