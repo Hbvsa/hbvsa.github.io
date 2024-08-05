@@ -1,3 +1,9 @@
+---
+title: "RAG"
+excerpt: "RAG with LangChain and GPT"
+collection: portfolio
+---
+
 ![[Drawing 2024-08-05 18.21.10.excalidraw|1000]]
 ## Indexing
 
