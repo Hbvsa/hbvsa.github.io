@@ -4,7 +4,7 @@ excerpt: "RAG with LangChain and GPT"
 collection: portfolio
 ---
 
-![[Drawing 2024-08-05 18.21.10.excalidraw|1000]]
+![](/images/RAG.png)
 ## Indexing
 
 The documents are split to fit into an embedding model. Then retrieved based on similarity score with the question. The model finally gives an answer using both the question and the extra relevant document splits.
