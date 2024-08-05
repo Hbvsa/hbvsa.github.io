@@ -5,10 +5,9 @@ collection: portfolio
 ---
 
 ![](/images/RAG.png)
-## Indexing
 
 The documents are split to fit into an embedding model. Then retrieved based on similarity score with the question. The model finally gives an answer using both the question and the extra relevant document splits.
-### Example of basic RAG with LangChain and GPT
+# Example of basic RAG with LangChain and GPT
 ```python 
 ! pip install langchain_community tiktoken langchain-openai langchainhub chromadb langchain
 ```
@@ -32,7 +31,7 @@ from langchain_core.runnables import RunnablePassthrough
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 ```
 
-The documents text is embedded using machine learned representations. The documents are split into chunks so that the LLMs can fit them as input and embed them.
+The documents text is embedded using machine learned representations. The documents are split into chunks so that the LLM can fit them as input and embed them.
 
 ```python  
 from langchain import PromptTemplate, HuggingFaceHub, LLMChain
@@ -92,8 +91,9 @@ Output:
 
 Task Decomposition is a technique used to break down complex tasks into smaller and simpler steps. This approach helps agents plan ahead and tackle difficult tasks more effectively. Task decomposition can be done through various methods, including using prompting techniques, task-specific instructions, or human inputs.
 ```
+# Step by step
 
-Step by step indexing
+## Indexing
 
 ```python
 # Documents
@@ -186,7 +186,8 @@ retriever = vectorstore.as_retriever()
 
 ## Retrieval
 
-Retrieval using OpenAIEmbedding for the documents and Chroma vectorstore casted as a retriever
+Embed the documents using OpenAIEmbeddings and Chroma vectorstore casted as a retriever for the retrieval
+
 ```python
 # Index
 from langchain_openai import OpenAIEmbeddings
@@ -201,7 +202,7 @@ docs = retriever.get_relevant_documents("What is Task Decomposition?")
 
 ## Generation
 
-Create your template which expects a context and a question. Using LangChain you can pass your retriever as the context to return the relevant documents to the question. The relevant documents and question are used to fill the prompt using our template which is passed to the LLM to output the answer.
+Create your template which expects a context and a question. Using LangChain you can pass your retriever as the context to return the relevant documents to the question. The relevant documents and question are used to fill the prompt using the template which is then passed to the LLM to output the answer.
 
 ```python
 from langchain_openai import ChatOpenAI
