@@ -15,7 +15,7 @@ I hold a Master of Science in Computer Science and Engineering from Instituto Su
 Coursework included advanced topics in machine learning and artificial intelligence:
 - Data Science
 - Machine Learning
-- Planning, Learning and Intelligent Decision Making (PLIDM) - focusing on Reinforcement Learning and Markov Decision Processes
+- Reinforcement Learning and Markov Decision Processes
 - Artificial Intelligence in Games
 - Autonomous Agents and Multi-Agent Systems
 - Natural Language Processing
