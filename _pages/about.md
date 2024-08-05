@@ -26,5 +26,5 @@ For my master thesis I implementated a deep learning model to extract correlatio
 
 ## Deep learning projects
 
-I have implemented and applied various deep learning models across multiple projects. One such project being displayed at [Portfolio](https://hbvsa.github.io/portfolio/).
+I have implemented and applied various deep learning models across multiple projects. One such project being displayed at [Portfolio](https://hbvsa.github.io/portfolio/) along side some educational posts showing the latest techniques used for LLMs such as RAG. 
 I have also deployed these models with Docker to different cloud providers such as GCP, AWS, Azure and HuggingFace to make sure the model capabilities can be shared and easy to use in an app format.
