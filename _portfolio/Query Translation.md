@@ -80,6 +80,7 @@ generate_queries = (
 ```
 
 The retriever is receiving a list of queries therefore use .map() to apply multiple retrievals. The result are documents from multiple retrievals using the different queries. The `get_unique_union` makes sure the result does not have duplicated documents.
+
 ```python
 from langchain.load import dumps, loads
 
@@ -104,6 +105,7 @@ output:
 ```
 
 Connect the `retrieval_chain` (which returns the relevant documents) with a new prompt template and pass it to the LLM to generate an answer.
+
 ```python 
 from operator import itemgetter
 from langchain_openai import ChatOpenAI
@@ -140,6 +142,7 @@ Task decomposition for LLM agents involves breaking down large tasks into smalle
 ## RAG Fusion
 
 Again, multi-queries
+
 ```python
 from langchain.prompts import ChatPromptTemplate
 
@@ -163,6 +166,7 @@ generate_queries = (
 ```
 
 Reciprocal Rank Fusion - set of unique documents from the different retrievals but ranked. If we had a big number of docs we could filter by getting only the top 10 for example.
+
 ``` python
 from langchain.load import dumps, loads
 
@@ -238,6 +242,7 @@ final_rag_chain.invoke({"question":question})
 Decomposing the problem into sub-problems and solving them sequentially
 
 Prompt to generate subquestions
+
 ```python
 from langchain.prompts import ChatPromptTemplate
 
@@ -250,6 +255,7 @@ prompt_decomposition = ChatPromptTemplate.from_template(template)
 ```
 
 Generate subquestions chain
+
 ```python
 from langchain_openai import ChatOpenAI
 from langchain_core.output_parsers import StrOutputParser
@@ -274,6 +280,7 @@ Output:
  ```
 
 Prompt to send to answer generation with previous subquestions and answers plus current relevant document
+
 ```python 
 # Prompt
 template = """Here is the question you need to answer:
@@ -291,9 +298,11 @@ Here is additional context relevant to the question:
 Use the above context and any background question + answer pairs to answer the question: \n {question}
 """
 
-decomposition_prompt = ChatPromptTemplate.from_template(template)```
+decomposition_prompt = ChatPromptTemplate.from_template(template)
+```
 
 Connecting all together. In the for loop after each answer, the question-pair is saved so it can be used as context for the next question.
+
 ```python 
 
 from operator import itemgetter
