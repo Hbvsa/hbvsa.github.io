@@ -1,6 +1,6 @@
 ---
-title: "RAG"
-excerpt: "RAG with LangChain and GPT"
+    title: "RAG with Query Translation"
+excerpt: "RAG with Query Translation"
 collection: portfolio
 ---
 
