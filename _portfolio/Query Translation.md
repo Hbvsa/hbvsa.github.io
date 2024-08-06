@@ -1,6 +1,6 @@
 ---
-    title: "RAG with Query Translation"
-excerpt: "RAG with Query Translation"
+title: "RAG with Query Translation"
+excerpt: "RAG techniques to improve retrieval"
 collection: portfolio
 ---
 
