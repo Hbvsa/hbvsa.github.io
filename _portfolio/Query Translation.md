@@ -53,7 +53,7 @@ retriever = vectorstore.as_retriever()
 ## Multi Query
 
 Retrieval may produce different results with subtle changes in query wording or if the embeddings do not capture the semantics of the data well. To address this problem we can produce multiple queries from a single user question and do potentially multiple retrievals.
-![[Drawing 2024-08-05 21.32.23.excalidraw|1000]]
+![](/images/multi_query.png)
 
 Creating multi-queries from a single question using a prompt and LLM
 
