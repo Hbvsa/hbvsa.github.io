@@ -3,7 +3,7 @@ title: "RAG with Query Translation"
 excerpt: "RAG techniques to improve retrieval"
 collection: portfolio
 ---
-
+# Query Translation - RAG techniques to improve retrieval
 ## Initial setup
 
 ```python
