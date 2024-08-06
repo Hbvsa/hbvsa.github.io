@@ -1,5 +1,10 @@
-## Initial setup
+---
+title: "RAG"
+excerpt: "RAG with LangChain and GPT"
+collection: portfolio
+---
 
+## Initial setup
 
 ```python
 !pip install langchain_community tiktoken langchain-openai langchainhub chromadb langchain
