@@ -1,9 +1,8 @@
 ---
-title: "Query Translation - RAG techniques to improve retrieval"
-excerpt: ""
+title: "Query Translation - RAG"
+excerpt: "Techniques to improve retrieval"
 collection: portfolio
 ---
-# Query Translation - RAG techniques to improve retrieval
 
 References - [Overview of latest RAG techniques by Lance Martin (Software Engineer at LangChain)](https://www.youtube.com/watch?v=wd7TZ4w1mSw&list=PLfaIDFEXuae2LXbO1_PKyVJiQ23ZztA0x&index=1)
 ## Initial setup
