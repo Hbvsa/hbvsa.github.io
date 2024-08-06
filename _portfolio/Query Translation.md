@@ -53,7 +53,7 @@ retriever = vectorstore.as_retriever()
 ## Multi Query
 
 Retrieval may produce different results with subtle changes in query wording or if the embeddings do not capture the semantics of the data well. To address this problem we can produce multiple queries from a single user question and do potentially multiple retrievals.
-![](/images/multi_query.png)
+![](/images/Multi_query.png)
 
 Creating multi-queries from a single question using a prompt and LLM
 
@@ -234,7 +234,7 @@ final_rag_chain.invoke({"question":question})
 
 ### Recursively
 
-![[Drawing 2024-08-05 18.21.10.excalidraw|1000]]
+![](/images/Decomposition_recursive.png)
 Decomposing the problem into sub-problems and solving them sequentially
 
 Prompt to generate subquestions
@@ -327,7 +327,7 @@ for q in questions:
 
 ### Individually
 
-![[Drawing 2024-08-06 16.46.08.excalidraw|1000]]
+![](/images/Decomposition_individually.png)
 Answer each sub-question individually 
 ```python
 from langchain import hub
