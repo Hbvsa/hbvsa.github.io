@@ -5,8 +5,7 @@ collection: portfolio
 ---
 # Query Translation - RAG techniques to improve retrieval
 
-References - [Overview of latest RAG techniques by Lance Martin (Software Engineer at LangChain)]([https://hbvsa.github.io/master_thesis/](https://www.youtube.com/watch?v=wd7TZ4w1mSw&list=PLfaIDFEXuae2LXbO1_PKyVJiQ23ZztA0x&index=1))
-
+References - [Overview of latest RAG techniques by Lance Martin (Software Engineer at LangChain)](https://www.youtube.com/watch?v=wd7TZ4w1mSw&list=PLfaIDFEXuae2LXbO1_PKyVJiQ23ZztA0x&index=1)
 ## Initial setup
 
 ```python
