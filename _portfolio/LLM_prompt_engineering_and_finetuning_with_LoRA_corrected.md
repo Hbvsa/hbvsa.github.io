@@ -1,5 +1,5 @@
 ---
-title: "Prompt Engineering and Parameter Efficient Fine Tunining for an Instruction Model"
+title: "Prompt Engineering and Parameter Efficient Fine Tuning for an Instruction Model"
 excerpt: "Prompting to transform a T5 Model into a summarization task model finetuned using LoRa"
 collection: portfolio
 ---
