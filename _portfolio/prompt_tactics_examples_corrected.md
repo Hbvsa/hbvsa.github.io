@@ -1,3 +1,9 @@
+---
+title: "Prompting"
+excerpt: "Prompting Techniques"
+collection: portfolio
+---
+
 <a href="https://githubtocolab.com/Hbvsa/LLMs/blob/main/Prompting_examples_and_simple_chat_bot/prompt_tactics_examples.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 # Table of Contents
