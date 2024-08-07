@@ -26,5 +26,9 @@ For my master thesis I implementated a deep learning model to extract correlatio
 
 ## Deep learning projects
 
-I have implemented and applied various deep learning models across multiple projects. One such project being displayed at [Portfolio](https://hbvsa.github.io/portfolio/). It also serves as a library to dump educational posts/tutorials of the latest techniques or models in the deep learning literature that I have reviewed. 
+I have implemented and applied various deep learning models across multiple projects. 
+
+One such end-to-end project being the "Dino Custom Object Detection" being displayed at [Portfolio](https://hbvsa.github.io/portfolio/). 
+The portfolio section also serves as a library to dump educational posts/tutorials of the latest techniques or models in the deep learning literature that I have reviewed. 
+
 I have also deployed these models with Docker to different cloud providers such as GCP, AWS, Azure and HuggingFace to make sure the model capabilities can be shared and easy to use in an app format.
