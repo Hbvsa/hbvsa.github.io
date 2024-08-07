@@ -1,3 +1,9 @@
+---
+title: "Prompt Engineering and Parameter Efficient Fine Tunining for an Instruction Model"
+excerpt: "Prompting to transform a T5 Model into a summarization task model finetuned using LoRa"
+collection: portfolio
+---
+
 <a href="https://githubtocolab.com/Hbvsa/LLMs/blob/main/LLM_prompt_finetuning_RLHF_langchain_huggingface/LLM_prompt_engineering_and_finetuning_with_LoRA_corrected.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 # Prompt engineering for the summarization of dialogues using the FLAN-T5 model
