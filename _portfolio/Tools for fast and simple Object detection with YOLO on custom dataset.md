@@ -1,10 +1,9 @@
-Here's the transformed text with the image references updated as requested:
-
 ---
 title: "Tool for creating image task dataset and training"
 excerpt: "Roboflow automated labeling and YOLOv9 for the object detection task"
 collection: portfolio
 ---
+
 Dataset: Videos of different people 
 Objective: Model capable of doing object detection to distinguish different people
 Tools: Roboflow automated labeling and YOLOv9 for the object detection task.
