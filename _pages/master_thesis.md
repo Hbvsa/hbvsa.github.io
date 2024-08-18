@@ -55,9 +55,6 @@ in non marginal effect datasets (purely non linear) of 3rd order interactions wh
 two of the top performing state of the art non exhaustive methods in marginal datasets achieved a recall
 of 0%.
 
-
-Certainly! I'll create a detailed section about your proposed solution, focusing on the different components of the model and explaining the rationale behind each component as described in your thesis. Here's a comprehensive breakdown:
-
 ---
 
 # Detailed Breakdown of the Proposed Deep Learning Model
