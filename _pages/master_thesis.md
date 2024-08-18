@@ -92,7 +92,7 @@ This layer assigns importance weights to each SNP vector.
 
 **Implementation Details:**
 - Implemented as a dense layer with one weight per SNP.
-- The input to this layer is separated from the main neural network because the importance of each SNP is represented as a single scalar value, independent of the SNP vector features. This separation allows the model to learn how much information from each SNP vector should be passed forward, regardless of the specific values in those vectors.
+- The input to this layer is separated from the main neural network because the importance of each SNP is represented as a single scalar value, independently of the SNP vector dimension.
 
 ### 3. Weighted Sum of SNP Vectors
 
