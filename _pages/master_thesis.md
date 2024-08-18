@@ -154,5 +154,3 @@ Applied to both the summed SNP vector and the outputs of the final dense layers.
 - This two-stage approach (deep learning followed by statistical testing) allows for efficient detection of epistasis, even in high-dimensional data.
 
 ---
-
-This detailed breakdown highlights the innovative aspects of your model, explaining not just what each component does, but why it was designed that way. It showcases your deep understanding of both the biological problem and the machine learning techniques used to address it.
