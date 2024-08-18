@@ -17,7 +17,7 @@ Tools: Roboflow automated labeling and YOLOv9 for the object detection task.
 
 Create a roboflow project and upload videos of each of the classes you want your model to detect. In our case it means uploading the videos of each unique person. 
 
-![[Pasted image 20240809154612.png]]
+![](/images/Pasted image 20240809154612.png)
 
 ### Autolabeling with GroundingDINO
 
