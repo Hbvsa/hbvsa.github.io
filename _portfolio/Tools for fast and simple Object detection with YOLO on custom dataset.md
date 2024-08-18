@@ -4,9 +4,12 @@ excerpt: "Roboflow automated labeling and YOLOv9 for the object detection task"
 collection: portfolio
 ---
 
-Dataset: Videos of different people 
+Dataset: Videos of different people
+
 Objective: Model capable of doing object detection to distinguish different people
+
 Tools: Roboflow automated labeling and YOLOv9 for the object detection task.
+
 ## Roboflow automated labeling
 ### Create a roboflow project and upload your files
 Create a roboflow project and upload videos of each of the classes you want your model to detect. In our case it means uploading the videos of each unique person. 
