@@ -28,12 +28,16 @@ After the previous step you will end up with your custom object detection datase
 Go to the generate tab to export your dataset and add preprocessing and augmentation if desired.
 ![](/images/Pasted_image_20240809161004.png)
 For example, random saturation and zooming.
+
 ![](/images/Pasted_image_20240809161317.png)
+
 Finally, after creating the new augmented dataset press export dataset and choose the YOLOv9 format (or whatever model you will use).
 ![](/images/Pasted_image_20240809161449.png)
 ![](/images/Pasted_image_20240809161713.png)
+
 The show download code will you give a code snippet which we will use to train the YOLO model.
 ![](/images/Pasted_image_20240809161835.png)
+
 ## Train a YOLO model using the Ultralytics library
 Open a google colab or any python IDE and execute the following lines of code.
 Install ultralytics
