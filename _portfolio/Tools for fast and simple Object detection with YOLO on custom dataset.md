@@ -14,26 +14,26 @@ Create a roboflow project and upload videos of each of the classes you want your
 ![](/images/Pasted_image_20240809154612.png)
 ### Autolabeling with GroundingDINO
 Select the autolabeling which will greatly accelerate your annotation using GroundingDINO to automatically assign the bounding boxes and the desired label name using a text prompt to detect your person/object.
-![](Pasted_image_20240809160247.png)
-![](Pasted_image_20240809160305.png)
-![](Pasted_image_20240809160526.png)
+![](/images/Pasted_image_20240809160247.png)
+![](/images/Pasted_image_20240809160305.png)
+![](/images/Pasted_image_20240809160526.png)
 ### Annotations review
 You can quickly review the annotations by double clicking a sample to open manual review and either edit, approve or reject the samples.
-![](Pasted_image_20240809160626.png)
+![](/images/Pasted_image_20240809160626.png)
 After you are satisfied with your samples click "Add Approved to Dataset".
 Repeat this process for each class.
 ## Exporting the dataset to train the YOLO model
 After the previous step you will end up with your custom object detection dataset.
-![](Pasted_image_20240809160849.png)
+![](/images/Pasted_image_20240809160849.png)
 Go to the generate tab to export your dataset and add preprocessing and augmentation if desired.
-![](Pasted_image_20240809161004.png)
+![](/images/Pasted_image_20240809161004.png)
 For example, random saturation and zooming.
-![](Pasted_image_20240809161317.png)
+![](/images/Pasted_image_20240809161317.png)
 Finally, after creating the new augmented dataset press export dataset and choose the YOLOv9 format (or whatever model you will use).
-![](Pasted_image_20240809161449.png)
-![](Pasted_image_20240809161713.png)
+![](/images/Pasted_image_20240809161449.png)
+![](/images/Pasted_image_20240809161713.png)
 The show download code will you give a code snippet which we will use to train the YOLO model.
-![](Pasted_image_20240809161835.png)
+![](/images/Pasted_image_20240809161835.png)
 ## Train a YOLO model using the Ultralytics library
 Open a google colab or any python IDE and execute the following lines of code.
 Install ultralytics
