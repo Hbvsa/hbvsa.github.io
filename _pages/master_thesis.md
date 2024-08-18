@@ -92,7 +92,7 @@ This layer assigns importance weights to each SNP vector.
 
 **Implementation Details:**
 - Implemented as a dense layer with one weight per SNP.
-- The input to this layer is separated from the main neural network for computational efficiency and interpretability.
+- The input to this layer is separated from the main neural network because the importance of each SNP is represented as a single scalar value, independent of the SNP vector features. This separation allows the model to learn how much information from each SNP vector should be passed forward, regardless of the specific values in those vectors.
 
 ### 3. Weighted Sum of SNP Vectors
 
@@ -137,14 +137,19 @@ Applied to both the summed SNP vector and the outputs of the final dense layers.
 
 ### Training Process
 
-- Uses binary cross-entropy loss and Adam optimizer.
-- Batch size of 10 and learning rate of 0.01, empirically determined to be optimal.
-- Multiple initializations are used to mitigate sensitivity to initial weights, especially important for datasets with subtle epistatic effects.
+- The model is run multiple times on each dataset, each time with a different random initialization of weights. This approach is crucial for mitigating the model's sensitivity to initial weights, which is especially important for datasets with subtle epistatic effects.
+- For each dataset run, the model is trained for a fixed number of epochs since early stopping is unreliable in this type of datasets.
+- The model's performance is evaluated based on its ability to identify the correct SNPs involved in epistatic interactions, rather than traditional classification metrics on the predictions of the target class.
+- Key evaluation metrics include:
+  - Recall: The percentage of datasets in which the epistatic interaction was correctly identified.
+  - Precision: The percentage of SNP combinations proposed by the model that are actually part of the true epistatic interaction.
+  - F-score: A combined measure of precision and recall.
+- The model continues to be run with different initializations until it successfully detects a significant epistatic interaction of the desired order, or until it reaches a predefined maximum number of attempts.
 
 ### Interpretation of Results
 
 - The weights learned by the attention layer directly represent the importance of each SNP.
-- This allows for easy identification of significant SNPs without need for additional computations post-training.
+- This allows for easy identification of significant SNPs without need for additional computations post-training. This is important for efficiency when compared to interpretability through pertubartion based methods.
 - The model's architecture resembles a linear model, making it inherently interpretable while still capturing complex non-linear relationships.
 
 ## Filtering Stage for Epistasis Detection
