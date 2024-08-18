@@ -1,5 +1,5 @@
 ---
-title: "Tools for creating image task datasets and training"
+title: "Tools for creating object detetcion datasets and training"
 excerpt: "Roboflow automated labeling and YOLOv9 for the object detection task"
 collection: portfolio
 ---
