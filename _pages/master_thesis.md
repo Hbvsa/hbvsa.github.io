@@ -149,7 +149,7 @@ Applied to both the summed SNP vector and the outputs of the final dense layers.
 ### Interpretation of Results
 
 - The weights learned by the attention layer directly represent the importance of each SNP.
-- This allows for easy identification of significant SNPs without need for additional computations post-training. This is important for efficiency when compared to interpretability through pertubartion based methods.
+- This allows for easy identification of significant SNPs without need for additional computations post-training. This is important for efficiency when compared to interpretability through perturbation based methods.
 - The model's architecture resembles a linear model, making it inherently interpretable while still capturing complex non-linear relationships.
 
 ## Filtering Stage for Epistasis Detection
