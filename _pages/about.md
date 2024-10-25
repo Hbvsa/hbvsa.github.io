@@ -7,7 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-# Selected Experience
 ## Education Background
 
 I hold a Master of Science in Computer Science and Engineering from Instituto Superior Técnico, Lisboa. 
@@ -22,7 +21,7 @@ Coursework included advanced topics in machine learning and artificial intellige
 
 ## Master Thesis - Deep Learning project to extract correlation between genetic factors and disease
 
-For my master thesis I implementated a deep learning model to extract correlations between genetic information and diseases in datasets with low feature-target correlation. In some datasets, each individual feature shows no correlation with the target variable when considered in isolation. However, the correlation emerges only through non-linear interactions among multiple features. This characteristic makes the problem particularly challenging to model. Check [Master Thesis](https://hbvsa.github.io/master_thesis/) for more information.
+For my master thesis I implementated a deep learning model to extract correlations between genetic information and diseases in datasets with low feature-target correlation. In some datasets, each individual feature shows no correlation with the target variable when considered in isolation. However, the correlation does emerge through non-linear interactions among multiple features. This characteristic makes the problem particularly challenging to model. Check [Master Thesis](https://hbvsa.github.io/master_thesis/) for more information.
 
 ## Deep learning projects
 
