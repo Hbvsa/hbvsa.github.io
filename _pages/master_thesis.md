@@ -78,7 +78,7 @@ The first layer of the model is an embedding layer that transforms each SNP valu
 
 **Implementation Details:**
 - Each SNP value is first converted into a unique token using the formula: Y = X_i + 3 * i, where X_i is the SNP value and i is the index of the SNP in the sample sequence.
-- The embedding layer uses these tokens to retrieve corresponding vectors of dimension 32.
+- The embedding layer uses these integer tokens (Y value from the formula) to retrieve corresponding vectors with size 32.
 
 ### 2. Attention Layer
 
@@ -92,12 +92,12 @@ This layer assigns importance weights to each SNP vector.
 
 **Implementation Details:**
 - Implemented as a dense layer with one weight per SNP.
-- The input to this layer is separated from the main neural network because the importance of each SNP is represented as a single scalar value, independently of the SNP vector dimension.
+- The input to this layer is a fixed value of 1 and the output has a dimension equal to the number of SNPs. Each output neuron represents the respective importance of each SNP.
 
 ### 3. Weighted Sum of SNP Vectors
 
 **Description:**
-After the attention layer, each SNP vector is scaled by its importance weight and then all vectors are summed element-wise.
+Using the output values from the attention layer, each SNP vector is scaled by its importance weight and then all vectors are summed element-wise.
 
 **Rationale:**
 - Combines information from all SNPs while preserving their learned importance.
