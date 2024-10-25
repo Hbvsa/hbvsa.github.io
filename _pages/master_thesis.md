@@ -14,7 +14,7 @@ redirect_from:
 
 This thesis addresses a critical challenge in genetic research: identifying correlations between Single Nucleotide Polymorphisms (SNPs) and diseases, particularly when these correlations depend on nonlinear interactions among multiple SNPs.
 
-The motivation stems from understanding that the correlation between SNPs and a disease may depend strictly on nonlinear interactions of a few SNPs, among the hundreds present in a dataset. This complexity poses a challenge for traditional statistical methods as analyzing individual SNPs may yield zero correlation with the disease. The correlations can only be accurately assessed when SNPs are considered in combination, and given the exponential increase in the number of combinations as the number of SNPs rises, the developed model provides a valuable alternative to exhaustive methods.
+The motivation stems from understanding that the correlation between SNPs and a disease may depend strictly on the nonlinear interactions of a few SNPs, among the hundreds present in a dataset. This complexity poses a challenge for traditional statistical methods as analyzing individual SNPs may yield zero correlation with the disease. The correlations can only be accurately assessed when SNPs are considered in combination, and given the exponential increase in the number of combinations as the number of SNPs rises, the developed model provides a valuable alternative to exhaustive methods.
 
 # Solution
 
